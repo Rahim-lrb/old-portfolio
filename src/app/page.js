@@ -22,7 +22,7 @@ export default function Home() {
             <p className="my-4 xs:my-2 xs:text-left xs:text-sm sm:text-md text-base font-medium">as a skilled fullstack developer, I am dedicated to turning ideas into innovative web applications, explore my latest projects and articles, showcasing my expertise in react.js and web development</p>
             {/* buttons */}
             <div className="flex items-center justify-center self-start mt-2 sm:self-center">
-              <Link href="/dummy.pdf" target="_blank" download={true} className="flex items-center bg-dark text-white p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-white hover:text-black duration-300 border-2 border-solid border-transparent hover:border-black w-40 sm:w-20 sm:px-3 sm:py-1 sm:text-sm md:w-30 ms:px-4 md:py-2 md:text-md">
+              <Link href="/resume.pdf" target="_blank" download={true} className="flex items-center bg-dark text-white p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-white hover:text-black duration-300 border-2 border-solid border-transparent hover:border-black w-40 sm:w-20 sm:px-3 sm:py-1 sm:text-sm md:w-30 ms:px-4 md:py-2 md:text-md">
                 resume
                 <Arrow className={"w-6 ml-1"}/>
               </Link>
