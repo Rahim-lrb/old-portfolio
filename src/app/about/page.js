@@ -26,7 +26,7 @@ export default function page() {
           </div>
 
           <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-black bg-light p-8 z-10 xl:col-span-4 md:order-1 md:!col-span-8'>
-              <Image className='w-full h-auto rounded-2xl' src={Me}></Image>
+              <Image className='w-full h-auto rounded-2xl' src={Me} priority></Image>
           </div>
 
           <div className='col-span-2 h-max flex flex-col justify-between items-end gap-10 xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
