@@ -23,7 +23,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         </Link>
         <p className='my-2 font-medium text-black sm:text-xs'>{summary}</p>
         {/* links */}
-        <div className='mt-2 flex items-center '>
+        <div className='mt-2 flex items-center'>
           <Link href={github} target='_blank' className='w-10'><Github /></Link>
           <Link href={link} target='_blank' className='ml-4 rounded-lg bg-black text-white p-2 px-6 font-semibold sm:text-base sm:px-4'>visit project</Link>
         </div>
