@@ -4,4 +4,4 @@ my portfolio project is built using Next.js and Framer Motion. It showcases my s
 
 ## Demo
 
-Explore it live [here](https://portfolio-hmn2bl2p3-rahim-lrb.vercel.app/)
+Explore it live [here](https://abderrahim-portfolio.vercel.app/)
