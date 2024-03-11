@@ -40,7 +40,7 @@ const ContactPage = () => {
       <motion.div className="h-full px-32 md:px-16 sm:px-10 xs:px-4" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
         <div className="h-full flex justify-between items-center md:flex-col">
           {/* TEXT CONTAINER */}
-          <div className="h-1/2 lg:h-full flex items-center justify-center text-6xl sm:w-full w-1/2 ">
+          <div className="h-1/2 lg:h-full flex items-center justify-center text-6xl sm:w-full w-1/2 pt-8 ">
             <div>
               {text.split("").map((letter, index) => (
                 <motion.span

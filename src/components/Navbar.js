@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
 import NavLink from './NavLink'
@@ -23,8 +23,13 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false);
     const [mode, setMode] = useThemeSwitcher();
-
-    console.log(mode)
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [open]);
 
     const topVariants = {
         closed: {
@@ -76,7 +81,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className='w-full font-medium flex items-center justify-between py-8 sm:py-2 md:py-4 md:px-6 lg:px-10 px-32 xs:px-2'>
+        <header className='w-full font-medium flex items-center justify-between py-8 sm:py-2 md:py-4 md:px-10 lg:px-10 px-32 xs:px-6'>
             {/* links */}
             <nav className='sm:hidden md:hidden '>
                 {links.map((link) => (
@@ -109,23 +114,23 @@ export default function Navbar() {
             <div className="sm:block md:block hidden h-full">
                 {/* MENU BUTTON */}
                 <button
-                    className="w-10 h-8 flex flex-col justify-between z-40 relative"
+                    className="w-10 h-8 flex flex-col justify-between z-40 relative sm:w-8 sm:h-6"
                     onClick={() => setOpen((prev) => !prev)}
                 >
                     <motion.div
                         variants={topVariants}
                         animate={open ? "opened" : "closed"}
-                        className="w-10 h-1 bg-black rounded origin-left"
+                        className="w-10 h-1 bg-black rounded origin-left md:h-[3px] sm:w-8"
                     ></motion.div>
                     <motion.div
                         variants={centerVariants}
                         animate={open ? "opened" : "closed"}
-                        className="w-10 h-1 bg-black rounded"
+                        className="w-10 h-1 bg-black rounded md:h-[3px] sm:w-8"
                     ></motion.div>
                     <motion.div
                         variants={bottomVariants}
                         animate={open ? "opened" : "closed"}
-                        className="w-10 h-1 bg-black rounded origin-left"
+                        className="w-10 h-1 bg-black rounded origin-left md:h-[3px] sm:w-8"
                     ></motion.div>
                 </button>
                 {/* MENU LIST */}
