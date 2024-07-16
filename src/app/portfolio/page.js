@@ -78,6 +78,9 @@ export default function Page() {
           <div className='col-span-12'>
             <FeaturedProject type={projectsData[3].type} title={projectsData[3].title} summary={projectsData[3].summary} link={projectsData[3].link} img={projectsData[3].img} github={projectsData[3].github}/>
           </div>
+          <div className='col-span-12'>
+            <FeaturedProject type={projectsData[4].type} title={projectsData[4].title} summary={projectsData[4].summary} link={projectsData[4].link} img={projectsData[4].img} github={projectsData[4].github}/>
+          </div>
         </div>
       </div>
     </>

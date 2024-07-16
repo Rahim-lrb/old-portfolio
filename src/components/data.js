@@ -2,6 +2,7 @@ import Zodiac from '/public/projects/zodiac2.png'
 import Estate from '/public/projects/real estate.png'
 import Workout from '/public/projects/workout.png'
 import Wex from "/public/projects/Wex.png"
+import Auth from "../../public/projects/auth.png"
 
 const projectsData = [
     {
@@ -39,6 +40,15 @@ const projectsData = [
         type: "featured project",
         img: Workout,
         github: "https://github.com/Rahim-lrb/workout_frontend"
+    },
+    {
+        id: 4,
+        title: "authentication system",
+        summary: "an advanced authentication system built with Next.js and NextAuth. It includes features such as Google and GitHub registration, password recovery, login, two-factor authentication (2FA), email verification, and an admin panel. The backend uses Prisma with a Neon database, and the frontend is styled with Shadcn and managed with React Hook Form",
+        link: "https://auth-v5-system.vercel.app",
+        type: "featured project",
+        img: Auth,
+        github: "https://github.com/Rahim-lrb/auth_v5_system"
     }
 ];
 export default projectsData;
